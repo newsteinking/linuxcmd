@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93138f13-facb-49e8-84ce-4230e65b11fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/contents.rst.inc" afterPath="$PROJECT_DIR$/docs/contents.rst.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/linuxcmd/chapter1.rst" afterPath="$PROJECT_DIR$/docs/linuxcmd/chapter1.rst" />
     </list>
     <ignored path="kdump.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contents.rst.inc" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contents.rst.inc" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15189873" vertical-offset="0" max-vertical-offset="869">
+            <state vertical-scroll-proportion="-5.28" vertical-offset="0" max-vertical-offset="792">
               <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chapter1.rst" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="chapter1.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter1.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2252" max-vertical-offset="3234">
-              <caret line="131" column="25" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.8277405" vertical-offset="646" max-vertical-offset="3652">
+              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
         <option value="$PROJECT_DIR$/docs/_templates/sidebarlogo.html" />
         <option value="$PROJECT_DIR$/docs/_templates/sidebarintro.html" />
         <option value="$PROJECT_DIR$/docs/index.rst" />
-        <option value="$PROJECT_DIR$/docs/linuxcmd/chapter1.rst" />
         <option value="$PROJECT_DIR$/docs/contents.rst.inc" />
+        <option value="$PROJECT_DIR$/docs/linuxcmd/chapter1.rst" />
       </list>
     </option>
   </component>
@@ -546,18 +546,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter1.rst">
+    <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2252" max-vertical-offset="3234">
-          <caret line="131" column="25" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
+        <state vertical-scroll-proportion="-5.28" vertical-offset="0" max-vertical-offset="792">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
+    <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter1.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15189873" vertical-offset="0" max-vertical-offset="869">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.8277405" vertical-offset="646" max-vertical-offset="3652">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
           <folding />
         </state>
       </provider>
