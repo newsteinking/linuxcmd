@@ -4,7 +4,7 @@
  본 문서는 리눅스 커널의 덤프 분석에 대해서 서술한다.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    linuxcmd/chapter0
    linuxcmd/chapter1
