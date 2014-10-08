@@ -4,16 +4,6 @@ linux command
    유용한 linux command 모음
 
 
-0. CentOS
-------------------------
-
-0.1 Old CentOS Image & Source
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-    $ http://vault.centos.org
-
 
 1. Basic
 ------------------------
@@ -50,25 +40,6 @@ core dump 생성되는곳
 
 
 
-
-
-
-
-1.3 crash -linux core dump analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-    $echo c > /proc/sysrq-trigger   or ALT+SysRq+C
-
-
-
-
-1.3 Directory Size
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 1.4 Directory Size
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -80,6 +51,11 @@ core dump 생성되는곳
 
 
 1.6 Directory Size
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+1.7 Directory Size
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -127,8 +103,8 @@ To install ELRepo for RHEL-5, SL-5 or CentOS-5:
     rpm -Uvh http://www.elrepo.org/elrepo-release-5-5.el5.elrepo.noarch.rpm (external link)
 
 
-2.1  kernel debug info
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.3  kernel debug info
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 커널 디버깅 정보를 인스톨한다.
 
@@ -137,7 +113,29 @@ To install ELRepo for RHEL-5, SL-5 or CentOS-5:
     $yum --enablerepo=debug install kernel-debuginfo-'uname -r'
 
 
-
-
-
 /usr/lib/debug/lib/modules/'uname -r'/vmlinux
+
+
+2.4  CentOS Desktop & X windows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+서버용 CentOS에 Desktop 과 X window 시스템을 인스톨 한다.
+
+::
+
+    $yum -groupinstall "Desktop" "Desktop Platform" "X window system" "Fonts"
+
+
+2.5  CentOS Development
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CentOS 기본 개발 빌드 환경 인스톨이다.
+
+::
+
+    $yum install gcc
+    $yum groupinstall "Development Tools"
+    $yum install ncurses-devel
+    $yum install libncurses5-dev
+    $yum install python-dev
+
