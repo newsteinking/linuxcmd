@@ -122,20 +122,8 @@ To install ELRepo for RHEL-5, SL-5 or CentOS-5:
     rpm -Uvh http://www.elrepo.org/elrepo-release-5-5.el5.elrepo.noarch.rpm (external link)
 
 
-2.3  kernel debug info
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-커널 디버깅 정보를 인스톨한다.
-
-::
-
-    $yum --enablerepo=debug install kernel-debuginfo-'uname -r'
-
-
-/usr/lib/debug/lib/modules/'uname -r'/vmlinux
-
-
-2.4  CentOS Desktop & X windows
+2.3  CentOS Desktop & X windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 서버용 CentOS에 Desktop 과 X window 시스템을 인스톨 한다.
@@ -145,7 +133,7 @@ To install ELRepo for RHEL-5, SL-5 or CentOS-5:
     $yum -groupinstall "Desktop" "Desktop Platform" "X window system" "Fonts"
 
 
-2.5  CentOS Development
+2.4  CentOS Development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 CentOS 기본 개발 빌드 환경 인스톨이다.
