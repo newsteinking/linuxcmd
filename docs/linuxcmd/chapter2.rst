@@ -180,6 +180,73 @@ using osirrox
 
 ubuntu.tar 를 풀어서 사이즈가 제일 큰 디렉토리의 layer.tar를 풀면 됨
 
+* local repository push
+docker push xx.xx.xx.xx:5000/centos
+
+* local repository search
+
+::
+
+    docker search localhost:5000/centos
+    docker search 10.3.0.77:5000/centos
+
+
+
+.
+
+2.1.4 Docker bash alias
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#Docker
+#Remove non-tagged images
+function docker-rmi-none() {
+    docker rmi $(docker images | grep none | awk '{print $3}');
+}
+
+#Remove all containers
+function docker-rm-all() {
+    docker rm $(docker ps -aq)
+}
+
+#Docker run image ($1) with default (bash) or specific command
+function dr() {
+    cmd="bash"
+
+    [ $# -eq 2 ] && cmd=$2
+    echo "docker run -it --rm $1 $cmd"
+    docker run --name tmp$(( $(docker ps | wc -l) - 1))  -it --rm $1 $cmd
+}
+
+#Load saved Docker image (from full path or default dir)
+function dl() {
+    local path=$1
+    [[ "${path}" =~ ^.*/.*$ ]] || path="${HOME}/devel/brew/"${path}
+
+    docker load -i ${path}
+}
+
+#Docker exec $cmd (defaul: bash) in $container (default: first container in docker ps)
+function de() {
+    local cmd=bash
+    local container=$1
+    [ -z "$1" ] && container=$(docker ps | tail -1 | awk '{print $1}')
+    [ "$container" == "CONTAINER" ] && >&2 echo "No running container" && return 0
+    [ $# -ge 2 ] && shift && cmd=$@
+    docker exec -it $container $cmd
+}
+
+#Get IP of $container (default: first container in docker ps)
+function di() {
+    local container=$1
+    [ -z "$1" ] && container=$(docker ps | tail -1 | awk '{print $1}')
+    [ "$container" == "CONTAINER" ] && >&2 echo "No running container" && return 0
+    docker inspect $container | jq -r .[0].NetworkSettings.IPAddress
+}
+
+
+
+
+
+
 
 2.1.2 CentOS 7.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
