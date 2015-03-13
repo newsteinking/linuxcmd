@@ -5,10 +5,10 @@
 
 Linux
 =================================
-Command
+HandBook 1.0
 =================================
 
-Welcome to sean's Guide to Linux Command
+Welcome to sean's Guide to Linux
 
 리눅스 명령어  정리입니다.
 

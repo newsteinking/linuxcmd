@@ -1,14 +1,14 @@
 Linux
 =================================
-Kdump Analysis
+Linux Handbook 
 =================================
 
-Welcome to sean's Guide to Linux Kernel kdump  Analysis
+Welcome to sean's Guide to Linux World
 
-리눅스 커널의 덤프 분석에 입문하신것을 환영합니다.
+리눅스 
+http://linuxcmd.readthedocs.org/ko/latest/
 
-
-**현재 번역중이며... 언제라도 잘못된 부분이 있으면 알려주세요.**
+**리눅스에 유용한 것들을 모았습니다. .**
 
 If you'd like to help,  `fork us on GitHub <https://github.com/newsteinking/kdump>`_!
 

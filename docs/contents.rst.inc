@@ -1,14 +1,14 @@
  Linux Command  for Administrator
 ---------------------------------------
 
- 본 문서는 리눅스 커널의 덤프 분석에 대해서 서술한다.
-
+ 본 문서는 리눅스 핸드북 1.0 이다.
 .. toctree::
    :maxdepth: 4
 
    linuxcmd/chapter0
    linuxcmd/chapter1
-
+   linuxcmd/chapter2
+   linuxcmd/chapter3
 
 
 

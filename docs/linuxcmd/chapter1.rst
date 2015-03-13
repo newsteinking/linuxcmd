@@ -1,4 +1,4 @@
-linux command
+chapter 1  Linux Command
 ===================================
 
    유용한 linux command 모음
