@@ -68,7 +68,12 @@ and will make repository file in /data/docker
 
 
 .
+* Build your own image from CentOS
 
+::
+
+    febootstrap -i iputils -i vim-minimal -i iproute -i bash -i coreutils -i
+    yum centos centos http://centos.mirror.iweb.ca/6.4/os/x86_64/ -u http://centos.mirror.iweb.ca/6.4/updates/x86_64/
 
 
 
