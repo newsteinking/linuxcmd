@@ -14,7 +14,7 @@ chapter 2  Docker
 예외적 조건들....
 
 * docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 In CentOS 6.5
 
@@ -40,7 +40,7 @@ then save the file and start docker again
 and will make repository file in /data/docker
 
 * Kernel Upgrade 2.6->3.8
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ::
 
@@ -51,7 +51,7 @@ and will make repository file in /data/docker
 .
 
 * docker start error
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ::
 
@@ -69,12 +69,7 @@ and will make repository file in /data/docker
 
 .
 
-* docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-* docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
