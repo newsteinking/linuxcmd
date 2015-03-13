@@ -144,6 +144,7 @@ and will make repository file in /data/docker
 
 ::
 
+    yum install feboostrap
     febootstrap -i iputils -i vim-minimal -i iproute -i bash -i coreutils -i
     yum centos centos http://centos.mirror.iweb.ca/6.4/os/x86_64/ -u http://centos.mirror.iweb.ca/6.4/updates/x86_64/
 
@@ -155,12 +156,29 @@ and
     [root@banshee centos]# tar -c . | docker import - centos
 
 
+or ISO mount
+::
+
+    # mkdir rootfs
+    # mount -o loop /path/to/iso rootfs
+    # tar -C rootfs -c . | docker import - rich/mybase
+
+using osirrox
+::
+
+    yum install xorriso
+    osirrox -indev blahblah.iso -extract / /tmp/blahblah
+    tar -C /tmp/blahblah -cf- . | docker import blahblah
 
 
+* save docker images to tar
+
+::
+
+    docker save ubuntu > /tmp/ubuntu.tar
 
 
-
-
+ubuntu.tar 를 풀어서 사이즈가 제일 큰 디렉토리의 layer.tar를 풀면 됨
 
 
 2.1.2 CentOS 7.0
