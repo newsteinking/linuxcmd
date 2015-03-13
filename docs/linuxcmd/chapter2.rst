@@ -41,6 +41,12 @@ CentOS 6
 $ sudo yum install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 $ sudo yum install docker-io
 
+
+* Python Devel Tools
+yum install python-pip python-devel
+
+
+
 AWS EC2에 설치되는 Amazon Linux(CentOS 기반)는 EPEL 저장소를 바로 사용할 수 있으므로 epel-release-6-8.noarch.rpm은 설치하지 않아도 됩니다.
 
 CentOS 7에서는 docker 패키지를 설치하면 됩니다.
@@ -119,7 +125,6 @@ and will make repository file in /data/docker
 .
 2.1.3 docker start error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 ::
@@ -242,9 +247,33 @@ function di() {
     docker inspect $container | jq -r .[0].NetworkSettings.IPAddress
 }
 
+2.1.5 gunicorn error
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+yum erase python-pip
 
+yum install xz-libs
 
+# Let's download the installation file using wget:
+wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz
+
+# Extract the files from the archive:
+tar -xvf setuptools-1.4.2.tar.gz
+
+# Enter the extracted directory:
+cd setuptools-1.4.2
+
+# Install setuptools using the Python we've installed (2.7.6)
+python2.7 setup.py install
+
+wget https://pypi.python.org/packages/source/p/pip/pip-1.2.1.tar.gz
+
+@annmoon-linux ~]# tar xvfz pip-1.2.1.tar.gz
+[root@annmoon-linux ~]# cd pip-1.2.1
+[root@annmoon-linux ~]# python setup.py install
+
+*install gunicorn
+pip install gunicorn
 
 
 
