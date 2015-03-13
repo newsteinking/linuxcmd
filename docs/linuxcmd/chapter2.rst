@@ -76,7 +76,11 @@ and will make repository file in /data/docker
     yum centos centos http://centos.mirror.iweb.ca/6.4/os/x86_64/ -u http://centos.mirror.iweb.ca/6.4/updates/x86_64/
 
 
+and
+::
 
+    [root@banshee ~]# cd centos/
+    [root@banshee centos]# tar -c . | docker import - centos
 
 
 
