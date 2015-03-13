@@ -59,8 +59,8 @@
       <file leaf-file-name="chapter2.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9412674" vertical-offset="417" max-vertical-offset="1615">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5301391" vertical-offset="417" max-vertical-offset="1653">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -667,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9412674" vertical-offset="417" max-vertical-offset="1615">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5301391" vertical-offset="417" max-vertical-offset="1653">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -38,9 +38,11 @@ then save the file and start docker again
 
 and will make repository file in /data/docker
 
-* docker default directory 변경
+* Kernel Upgrade 2.6->3.8
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::
 
+    yum --enablerepo=elrepo-kernel install kernel-ml
 
 * docker default directory 변경
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
