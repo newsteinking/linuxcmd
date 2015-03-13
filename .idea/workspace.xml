@@ -59,8 +59,8 @@
       <file leaf-file-name="chapter2.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64760435" vertical-offset="379" max-vertical-offset="1691">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57886434" vertical-offset="678" max-vertical-offset="1957">
+              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -633,14 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="684">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter3.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-31.92" vertical-offset="0" max-vertical-offset="912">
@@ -657,6 +649,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6" vertical-offset="0" max-vertical-offset="684">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter1.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2926">
@@ -667,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64760435" vertical-offset="379" max-vertical-offset="1691">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.57886434" vertical-offset="678" max-vertical-offset="1957">
+          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
           <folding />
         </state>
       </provider>

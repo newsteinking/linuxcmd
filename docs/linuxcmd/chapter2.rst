@@ -46,8 +46,22 @@ and will make repository file in /data/docker
     yum install http://www.elrepo.org/elrepo-release-6-5.el6.elrepo.noarch.rpm
     yum --enablerepo=elrepo-kernel install kernel-ml
 
-* docker default directory 변경
+* docker start error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::
+
+    usr/bin/docker: relocation error: /usr/bin/docker: symbol dm_task_get_info_with_deferred_remove,
+    version Base not defined in file libdevmapper.so.1.02 with link time reference
+
+** 
+
+::
+
+    yum-config-manager --enable public_ol6_latest
+
+    yum install device-mapper-event-libs
+
+
 
 
 * docker default directory 변경
