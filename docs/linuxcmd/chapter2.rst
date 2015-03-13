@@ -40,8 +40,10 @@ and will make repository file in /data/docker
 
 * Kernel Upgrade 2.6->3.8
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ::
 
+    yum install http://www.elrepo.org/elrepo-release-6-5.el6.elrepo.noarch.rpm
     yum --enablerepo=elrepo-kernel install kernel-ml
 
 * docker default directory 변경
