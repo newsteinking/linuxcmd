@@ -11,9 +11,10 @@ chapter 2  Docker
 2.1.1 CentOS 6.5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+예외적 조건들....
 
 * docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In CentOS 6.5
 
@@ -39,21 +40,25 @@ then save the file and start docker again
 and will make repository file in /data/docker
 
 * Kernel Upgrade 2.6->3.8
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
     yum install http://www.elrepo.org/elrepo-release-6-5.el6.elrepo.noarch.rpm
     yum --enablerepo=elrepo-kernel install kernel-ml
 
+
+.
+
 * docker start error
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ::
 
     usr/bin/docker: relocation error: /usr/bin/docker: symbol dm_task_get_info_with_deferred_remove,
     version Base not defined in file libdevmapper.so.1.02 with link time reference
 
-** 
+.
 
 ::
 
@@ -62,14 +67,14 @@ and will make repository file in /data/docker
     yum install device-mapper-event-libs
 
 
+.
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 * docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-* docker default directory 변경
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

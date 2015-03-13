@@ -1,7 +1,8 @@
  Linux Command  for Administrator
 ---------------------------------------
 
- 본 문서는 리눅스 핸드북 1.0 이다.
+ 본 문서는 리눅스 핸드북 1.0 이다
+
 .. toctree::
    :maxdepth: 4
 
