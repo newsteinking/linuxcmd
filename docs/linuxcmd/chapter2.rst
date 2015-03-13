@@ -11,11 +11,57 @@ chapter 2  Docker
 2.1.1 CentOS 6.5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  디렉토리 사이즈를 보여준다.
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In CentOS 6.5
 
 ::
 
-    $ du -hs  [directory name]
+    service docker stop
+    mkdir /data/docker  (new directory)
+    vi /etc/sysconfig/docker
+
+add following line
+
+::
+
+    other_args=" -g /data/docker -p /var/run/docker.pid"
+
+then save the file and start docker again
+
+::
+
+    service docker start
+
+
+and will make repository file in /data/docker
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* docker default directory 변경
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
 
 
 2.1.2 CentOS 7.0
