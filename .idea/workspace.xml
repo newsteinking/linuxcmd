@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="93138f13-facb-49e8-84ce-4230e65b11fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/linuxcmd/chapter2.rst" afterPath="$PROJECT_DIR$/docs/linuxcmd/chapter2.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kdump.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="chapter2.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71596247" vertical-offset="7420" max-vertical-offset="9460">
-              <caret line="365" column="2" selection-start-line="365" selection-start-column="2" selection-end-line="365" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.71596247" vertical-offset="7662" max-vertical-offset="10670">
+              <caret line="376" column="68" selection-start-line="376" selection-start-column="68" selection-end-line="376" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -676,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter2.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71596247" vertical-offset="7420" max-vertical-offset="9460">
-          <caret line="365" column="2" selection-start-line="365" selection-start-column="2" selection-end-line="365" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.71596247" vertical-offset="7662" max-vertical-offset="10670">
+          <caret line="376" column="68" selection-start-line="376" selection-start-column="68" selection-end-line="376" selection-end-column="68" />
           <folding />
         </state>
       </provider>

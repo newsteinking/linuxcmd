@@ -45,6 +45,24 @@ $ sudo yum install docker-io
 * Python Devel Tools
 yum install python-pip python-devel
 
+yum install openssl
+
+
+/docker-registry-demo/registry/docker-registry/
+python setuup.py install
+
+
+Install via pip:
+
+$ pip install boto
+
+Install from source:
+
+$ git clone git://github.com/boto/boto.git
+$ cd boto
+$ python setup.py install
+
+pip install boto
 
 
 AWS EC2에 설치되는 Amazon Linux(CentOS 기반)는 EPEL 저장소를 바로 사용할 수 있으므로 epel-release-6-8.noarch.rpm은 설치하지 않아도 됩니다.
@@ -322,6 +340,43 @@ DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
 
 
 other_args=" -g /data/docker -p /var/run/docker.pid --insecure-registry 10.3.0.115:5000 "
+
+
+*make registry error
+
+/docker-registry-demo/registry/docker-registry
+에서
+python setup.py install
+
+docker-registry-demo/registry/docker-registry/requirements
+pip install -r main.txt
+
+
+SWIG/_m2crypto.i:30: Error: Unable to find 'openssl/opensslv.h'
+
+yum install openssl-devel
+
+
+
+* proxy error
+ requirements.insert(0, 'argparse==1.2.1')
+
+/docker-registry-demo/registry/Dockerfile
+/docker-registry-demo/registry/docker-registry/Dockerfile
+
+모두에 proxy를 설정한다.
+/Dockerfile
+
+ENV http_proxy 'http://10.3.0.172:8080'
+ENV https_proxy 'http://10.3.0.172:8080'
+ENV HTTP_PROXY 'http://10.3.0.172:8080'
+ENV HTTPS_PROXY 'http://10.3.0.172:8080'
+
+* pip error
+
+pip install --proxy http://user:password@proxyserver:port TwitterApi
+
+
 
 *도커 레지스트리에 푸시(Push)하기
 
