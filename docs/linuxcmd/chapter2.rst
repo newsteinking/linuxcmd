@@ -246,6 +246,19 @@ function di() {
     [ "$container" == "CONTAINER" ] && >&2 echo "No running container" && return 0
     docker inspect $container | jq -r .[0].NetworkSettings.IPAddress
 }
+*(none) 이미지만 지우기
+docker rmi $(docker images -f dangling=true | awk '{ print $3 }' | grep -v IMAGE)
+
+*컨테이너 한번에 지우기
+
+$ sudo docker rm $(docker ps -a -q)
+
+*이미지 한번에 지우기
+
+$ sudo docker rmi -f $(docker images -q)
+
+
+
 
 2.1.5 gunicorn error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -275,6 +288,125 @@ wget https://pypi.python.org/packages/source/p/pip/pip-1.2.1.tar.gz
 *install gunicorn
 pip install gunicorn
 
+2.1.6 make a private registry
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+참고 :https://blog.codecentric.de/en/2014/02/docker-registry-run-private-docker-image-repository/
+
+https://github.com/lukaspustina/docker-registry-demo
+
+make base
+make registry
+make start-registry
+
+* error
+W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/trusty/InRelease
+
+vi /etc/default/docker
+
+DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
+
+* docker remote error
+::
+
+    FATA[0002] Error: Invalid registry endpoint https://10.3.0.115:5000/v1/: Get https://10.3.0.115:5000/v1/_ping: EOF.
+    If this private registry supports only HTTP or HTTPS with an unknown CA certificate,
+    please add `--insecure-registry 10.3.0.115:5000` to the daemon's arguments. In the case of HTTPS,
+    if you have access to the registry's CA certificate, no need for the flag; simply place the CA
+    certificate at /etc/docker/certs.d/10.3.0.115:5000/ca.crt
+
+
+
+이럴경우
+모든 접속 서버에도 /etc/sysconfig/docker
+아래 --insecure-registry 를 집어 넣어야 한다.
+
+
+other_args=" -g /data/docker -p /var/run/docker.pid --insecure-registry 10.3.0.115:5000 "
+
+*도커 레지스트리에 푸시(Push)하기
+
+이미지를 도커 레지스트리에 넣기 위해서는 이미지에 적당한 이름을 붙여줄 필요가 있습니다. docker tag 명령어로
+이미지에 새로운 이름을 부여
+
+::
+
+    docker tag nacyot/hello_docker 0.0.0.0:5000/hello_docker
+
+    docker tag centos:5 10.3.0.115:5000/centos:5
+    docker tag ubuntu:latest  10.3.0.115:5000/ubuntu:latest
+
+
+    docker push 10.3.0.115:5000/centos:5
+
+Pushing tag for rev [861c710fef70] on {http://10.3.0.115:5000/v1/repositories/centos/tags/5}
+
+.
+
+* remote 가져오기
+
+docker pull 10.3.0.115:5000/registry
+
+
+
+* docker search http proxy setting
+
+vi /etc/sysconfig/docker
+아래 라인 추가
+
+##sean
+export HTTP_PROXY=http://10.3.0.172:8080
+export HTTPS_PROXY=http://10.3.0.172:8080
+
+* dockerfile http proxy
+
+ENV http_proxy 'http://user:password@proxy-host:proxy-port'
+ENV https_proxy 'http://user:password@proxy-host:proxy-port'
+ENV HTTP_PROXY 'http://user:password@proxy-host:proxy-port'
+ENV HTTPS_PROXY 'http://user:password@proxy-host:proxy-port'
+샘플
+ENV http_proxy 'http://10.3.0.172:8080'
+ENV https_proxy 'http://10.3.0.172:8080'
+ENV HTTP_PROXY 'http://10.3.0.172:8080'
+ENV HTTPS_PROXY 'http://10.3.0.172:8080'
+
+
+
+
+* remote search
+
+curl -X GET http://10.3.0.115:5000/v1/search?q=registry
+curl -X GET http://10.3.0.115:5000/v1/search
+
+
+
+docker search 10.3.0.115:5000/library
+
+
+2.1.7 기본 인증
+
+/etc/hosts
+
+127.0.0.1       localhost
+127.0.1.1       ubuntu
+<레지스트리 서버 IP 주소>    registry.example.com
+
+
+openssl genrsa -out server.key 2048
+
+openssl req -new -key server.key -out server.csr
+
+
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+
+$ sudo cp server.crt /etc/pki/ca-trust/source/anchors/
+$ sudo update-ca-trust enable
+$ sudo update-ca-trust extract
+
+client에도 server.crt 를 복사하여 3가지 실행
+
+yum install httpd-tools
+
+...continue
 
 
 2.1.2 CentOS 7.0
