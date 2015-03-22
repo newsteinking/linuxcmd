@@ -371,10 +371,34 @@ ENV http_proxy 'http://10.3.0.172:8080'
 ENV https_proxy 'http://10.3.0.172:8080'
 ENV HTTP_PROXY 'http://10.3.0.172:8080'
 ENV HTTPS_PROXY 'http://10.3.0.172:8080'
+RUN export http_proxy=$HTTP_PROXY
+RUN export https_proxy=$HTTPS_PROXY
+
 
 * pip error
 
+::
+
+    File "/usr/lib/python2.7/dist-packages/requests/utils.py", line 636, in except_on_missing_scheme
+    raise MissingSchema('Proxy URLs must have explicit schemes.')
+    MissingSchema: Proxy URLs must have explicit schemes.
+
+
+
+
+* pin reinstall
+[root@annmoon-linux ~]# wget https://pypi.python.org/packages/source/p/pip/pip-1.2.1.tar.gz
+[root@annmoon-linux ~]# tar xvfz pip-1.2.1.tar.gz
+[root@annmoon-linux ~]# cd pip-1.2.1
+[root@annmoon-linux ~]# python setup.py install
+
+
 pip install --proxy http://user:password@proxyserver:port TwitterApi
+
+pip install --proxy="user:password@server:port" packagename
+pip install --proxy="sean:news2816@10.3.0.172:8080"
+
+python setup.py install
 
 
 
@@ -392,6 +416,8 @@ pip install --proxy http://user:password@proxyserver:port TwitterApi
 
 
     docker push 10.3.0.115:5000/centos:5
+
+    docker push 10.3.0.77:5000/centos:5
 
 Pushing tag for rev [861c710fef70] on {http://10.3.0.115:5000/v1/repositories/centos/tags/5}
 
