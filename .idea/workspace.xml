@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93138f13-facb-49e8-84ce-4230e65b11fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/contents.rst.inc" afterPath="$PROJECT_DIR$/docs/contents.rst.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/linuxcmd/chapter4.rst" afterPath="$PROJECT_DIR$/docs/linuxcmd/chapter4.rst" />
     </list>
     <ignored path="kdump.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chapter4.rst" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter4.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="chapter3.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter3.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chapter4.rst" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter4.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -732,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter3.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/contents.rst.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -748,10 +739,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter3.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/linuxcmd/chapter4.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
         </state>
       </provider>

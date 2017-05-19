@@ -5,17 +5,34 @@ chapter 4 AHMS
 
 
 
-4.1 Basic
+4.1 Basic JAR Creation
 ------------------------
 
-4.1.1 Directory Size
+Eclipse - Export - select source
+
+4.1.1 Unsupported major.minor version 52.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  디렉토리 사이즈를 보여준다.
+J2SE 8   = Version 52
+
+J2SE 7   = Version 51
+
+J2SE 6.0 = Version 50
+
+J2SE 5.0 = Version 49
+
+JDK  1.4 = Version 48
+
+JDK  1.3 = Version 47
+
+JDK  1.2 = Version 46
+
+JDK  1.1 = Version 45
+
 
 ::
 
-    $ du -hs  [directory name]
+
 
 
 4.1.2 manual core dump
