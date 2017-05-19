@@ -10,6 +10,7 @@
    linuxcmd/chapter1
    linuxcmd/chapter2
    linuxcmd/chapter3
+   linuxcmd/chapter4
 
 
 
